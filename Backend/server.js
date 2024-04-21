@@ -25,8 +25,7 @@ app.all('*', (req, res) => {
   res.status(404).send({ code: "Note-Found", message: "Not Found" })
 })
 app.listen(port, async () => {
-  console.info(` API is listening on port ${port}`);
+  console.info(`API is listening on port ${port}`);
 });
 
 module.exports = app;
-
